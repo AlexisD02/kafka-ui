@@ -31,7 +31,8 @@ const ClusterMenu: FC<ClusterMenuProps> = ({
 }) => {
   const location = useLocation();
 
-  const getIsMenuItemActive = (path: string) => location.pathname.includes(path);
+  const getIsMenuItemActive = (path: string) =>
+    location.pathname.includes(path);
 
   const hasFeatureConfigured = (key: ClusterFeaturesEnum) =>
     features?.includes(key);
